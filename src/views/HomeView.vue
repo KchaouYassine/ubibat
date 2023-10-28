@@ -1,18 +1,42 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <LandingSection />
+  <WhoWeAreSection />
+  <ServicesSection />
+  <ClientsSection/>
+  <FlyerSection />
+  <TeamSection />
+  <ContactSection />
+  <FooterSection />
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import LandingSection from '@/sections/LandingSection.vue'
+import WhoWeAreSection from '@/sections/WhoWeAreSection.vue'
+import ServicesSection from '@/sections/ServicesSection.vue'
+import ClientsSection from '@/sections/ClientsSection.vue'
+import FlyerSection from '@/sections/FlyerSection.vue'
+import TeamSection from '@/sections/TeamSection.vue'
+import ContactSection from '@/sections/ContactSection.vue'
+import FooterSection from '@/sections/FooterSection.vue'
 
-export default {
-  name: "HomeView",
+
+export default{
+  name:'home',
   components: {
-    HelloWorld,
-  },
-};
+    LandingSection, 
+    WhoWeAreSection, 
+    ServicesSection,
+    ClientsSection,
+    FlyerSection,
+    TeamSection,
+    ContactSection,
+    FooterSection
+  }
+}
+
 </script>
+
+<style>
+.serviceTitle{
+  font-size:3em;
+}
+</style>

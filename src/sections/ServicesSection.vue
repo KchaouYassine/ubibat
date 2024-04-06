@@ -1,5 +1,7 @@
 <template>
     <div class="serviceSection 100-vh">
+      <h1 class="sectionTitle text-orange fw-bold text-uppercase">Nos services</h1>
+
       <nav class="container nav nav-pills justify-content-center flex-column flex-sm-row">
       <a class="mx-5 cursor-pointer flex-sm-fill text-sm-center nav-link pill-outline-red active" aria-current="page" @click="(event) => onChangeService(event,'diagnostic')">Diagnostic</a>
       <a class="mx-5 cursor-pointer flex-sm-fill text-sm-center nav-link pill-outline-green" @click="(event) =>  onChangeService(event, 'etudes')">Etudes</a>

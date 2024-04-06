@@ -36,25 +36,7 @@ export default{
 </script>
 
 <style>
-:root{
-  --main-red-color: #e74c3c;
-  --main-green-color: #0f9c22;
-  --main-orange-color: #f0690f;
 
-}
-.cursor-pointer{
-  cursor: pointer !important;
-}
-
-.red{
-  color: #e74c3c;
-}
-.green {
-  color: #0f9c22;
-}
-.orange {
-  color: #f0690f;
-}
 
 .redBg{
   background: #e74c3c !important;
@@ -66,7 +48,5 @@ export default{
   background: #f0690f !important;
 }
 
-.serviceTitle{
-  font-size:3em;
-}
+
 </style>

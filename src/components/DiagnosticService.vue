@@ -72,6 +72,7 @@ export default {
   .icon-box {
     height: 320px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem;
 
     .icon {
       top: -36px;

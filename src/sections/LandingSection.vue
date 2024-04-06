@@ -1,29 +1,22 @@
 <template>
-  <Navbar />
-  <div class="landing-section position-relative w-100 d-flex justify-content-center align-items-center">
-    <!-- 
-    <div >
+  <div class="landing-section position-relative w-100 d-flex justify-content-center align-items-center flex-wrap">
+    <div class="w-100" >
       <img src="@/assets/logo.png" alt="logo" /> 
-    </div>
-    -->
-    <div class="rotating-text">
-      <p class="me-1">Nos services sont 
+    </div>    
+    <div class="rotating-text fw-bold text-white">
+      <p class="d-inline-flex m-0 me-3">Nos services sont </p>
+      <p class="d-inline-flex m-0 ">
+        <span class="word text-red" ref="word1">Diagnostic.</span>
+        <span class="word text-green" ref="word2">Etudes.</span>
+        <span class="word text-orange" ref="word3">Chantier.</span>
       </p>
-      <p>
-      <span class="word w-1" ref="word1">Diagnostic.</span>
-      <span class="word w-2" ref="word2">Etudes.</span>
-      <span class="word w-3" ref="word3">Chantier.</span>
-      </p>
- 
     </div>
   </div>
 </template>
 <script>
-import Navbar from '@/components/Navbar.vue'
 
 export default {
   name: 'landingSection',
-  components: { Navbar },
   data() {
     return {
       currentWordIndex: 0,
@@ -82,14 +75,24 @@ export default {
 </script>
 
 
-<style scoped>
-/* Landing */
+<style lang="scss">
 .landing-section{
   height: calc(100vh - 200px);
   overflow: hidden;
-  background: url(@/assets/newYork1.jpg);
-  background-size: cover;
+  background: url(@/assets/paris.webp);
+  background-size: cover
+
 }
+.landing-section:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 17, 54, .5) !important ;
+}
+/*
 .landing-section:before{
   content: '';
   position: absolute;
@@ -112,33 +115,27 @@ export default {
   transform-origin:left;
   transform: skewY(-8deg);
 }
+*/
 
-/* Rotator text */
-.rotating-text {
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 50px;
-  color: white;
+.rotating-text { 
+  font-size: 80px;
   transform: translateX(-80px);
-}
-.rotating-text p {
-  display: inline-flex;
-  margin: 0;
-  vertical-align: top;
-}
-.rotating-text p .word {
-  position: absolute;
-  display: flex;
-  opacity: 0;
-}
-.word {
-  opacity: 0;
-  transition: opacity 0.5s;
+  margin-top: -20%;
+  p{
+    vertical-align: top;
+    .word {
+      position: absolute;
+      display: flex;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    &.active{
+      opacity: 1;
+    }
+  }
+
 }
 
-.word.active {
-  opacity: 1;
-}
 .rotating-text p .word .letter {
   transform-origin: center center 25px;
 }
@@ -151,18 +148,6 @@ export default {
 }
 .rotating-text p .word .letter.behind {
   transform: rotateX(-90deg);
-}
-
-.w-1 {
-  color: #e74c3c;
-}
-
-.w-2 {
-  color: #0f9c22;
-}
-
-.w-3 {
-  color: #f0690f;
 }
 
 </style>

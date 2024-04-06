@@ -76,7 +76,6 @@ background: #fff;
 transform-origin: left;
 transform: skewY(8deg);
 }
-*/
 
 .diagnosticSection::before{
   content: "";
@@ -86,8 +85,8 @@ transform: skewY(8deg);
   left: 0;
   width: 100%;
   height: 100%;
-
 }
+*/
 
 .diagnosticSection .content{
 z-index: 2;

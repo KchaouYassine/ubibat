@@ -7,9 +7,9 @@
         </p>
         <div class="services row margin-auto">
           <div v-for="diagnosticItem in  diagnosticData" :key="diagnosticItem.title"  class="col-md-6">
-            <div class="icon-box position-relative text-center bg-white mb-5 mt-3 py-5 px-4 ">
-              <div class="icon position-absolute text-center text-white"><font-awesome-icon icon="fa-solid fa-check fa-lg" /></div>
-              <h4 class="fs-5 mb-3">{{ diagnosticItem.title }}</h4>
+            <div class="icon-box position-relative  bg-white mb-5 mt-3 py-5 px-4 ">
+              <div class="icon position-absolute text-white d-flex align-items-center justify-content-center"><font-awesome-icon icon="fa-solid fa-check fa-lg" /></div>
+              <h4 class="fs-5 mb-3 text-center">{{ diagnosticItem.title }}</h4>
               <ul class=" list-unstyled text-start">
                 <li class="mb-1" v-for="info in  diagnosticItem.content" :key="info"> 
                   <font-awesome-icon :icon="'fa-solid fa-check fa-lg'"  class="me-2" />
@@ -26,16 +26,8 @@
 
 <script>
 import { ref } from 'vue'
-
-import DiagnosticService from '@/components/DiagnosticService.vue'
-import EtudesService from '@/components/EtudesService.vue'
-import ChantierService from '@/components/ChantierService.vue'
-
-
-
 export default {
   name:"DiagnosticServices",
-  components:{DiagnosticService, EtudesService, ChantierService},
   setup() {
     const diagnosticData = ref([
       { 
@@ -69,7 +61,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .diagnosticSection{
   background: url(@/assets/services/diagnostic.jpg);
   background-size: cover;
@@ -88,15 +80,18 @@ export default {
       border-radius: 50%;
       border: 6px solid #fff;
       background:var(--main-red-color);
+      width: 72px;
+      height: 72px;
     }
     &:hover{
-      .icon {
+    .icon {
         font-size: 30px;
         color: var(--main-red-color) !important;
-        background: #fff;
+        background: #fff !important;
         border: 2px solid var(--main-red-color);
       }
       h4{
+        font-weight: bold ;
         color: var(--main-red-color) ;
       }
 

@@ -3,24 +3,24 @@
 </template>
 
 <style lang="scss">
+:root{
+  --main-red-color: #e74c3c;
+  --main-green-color: #0f9c22;
+  --main-orange-color: #f0690f;
+  --main-primary-color: #2c3e50;
+
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--main-primary-color);
 }
 
-:root{
-  --main-red-color: #e74c3c;
-  --main-green-color: #0f9c22;
-  --main-orange-color: #f0690f;
-
+.text-primary{
+  color: var(--main-primary-color) !important;
 }
-.cursor-pointer{
-  cursor: pointer !important;
-}
-
 .text-red{
   color: var(--main-red-color);
 }
@@ -31,16 +31,10 @@
   color: var(--main-orange-color);
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.cursor-pointer{
+  cursor: pointer !important;
 }
+
+
+
 </style>

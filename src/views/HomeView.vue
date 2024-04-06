@@ -32,21 +32,4 @@ export default{
     FooterSection
   }
 }
-
 </script>
-
-<style>
-
-
-.redBg{
-  background: #e74c3c !important;
-}
-.greenBg {
-  background: #0f9c22 !important;
-}
-.orangeBg {
-  background: #f0690f !important;
-}
-
-
-</style>

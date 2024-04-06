@@ -1,119 +1,71 @@
 <template>
   <!-- prettier-ignore -->
   <div class="team container">
-    <div class="section-title">
-      <h2 data-aos="fade-up">Team</h2>
-      <p data-aos="fade-up">
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-3 d-flex align-items-stretch" data-aos="fade-up">
-        <TeamCard :name="ahmedInfos.name" :email="ahmedInfos.email" :phoneNumber="ahmedInfos.phoneNumber" :linkedIn="ahmedInfos.linkedIn" />
-      </div>
-      <div class="col-3 d-flex align-items-stretch" data-aos="fade-up">
-        <TeamCard :name="azmiInfos.name" :email="azmiInfos.email" :phoneNumber="azmiInfos.phoneNumber" :linkedIn="azmiInfos.linkedIn" />
-      </div>
-    </div>
+      <h1 class="sectionTitle fw-bold my-5">Notre team</h1>
+       <div class="d-flex justify-content-around align-items-center">
+        <TeamCard :name="ahmedInfos.name" :email="ahmedInfos.email" :phoneNumber="ahmedInfos.phoneNumber" :linkedIn="ahmedInfos.linkedIn" :imgPath="ahmedInfos.imgPath" />
+        <TeamCard :name="azmiInfos.name" :email="azmiInfos.email" :phoneNumber="azmiInfos.phoneNumber" :linkedIn="azmiInfos.linkedIn" :imgPath="azmiInfos.imgPath" />
+      </div> 
+
   </div>
 </template>
 
 <script>
 import TeamCard from "@/components/TeamCard.vue";
 export default {
+  components: { TeamCard },
   data() {
     return {
       ahmedInfos: {
-        name: "ahmed kchaou",
-        email: "dscdscdscsdcsd",
+        name: "Ahmed kchaou",
+        email: "kchaou.ahmed24@gmail.com",
         phoneNumber: "52565555",
-        linkedIn: "j;njn;j",
+        linkedIn: "https://www.linkedin.com/in/ahmed-kchaou-9829a0110",
+        imgPath:"ahmed"
       },
       azmiInfos: {
         name: "Azmi Ammar",
-        email: "dscdscdscsdcsd",
+        email: "azmi@live.fr",
         phoneNumber: "52565555",
-        linkedIn: "j;njn;j",
+        linkedIn: "https://www.linkedin.com/in/azmi-ammar-2a93bb169/",
+        imgPath:"azmi"
       },
     };
   },
-  components: { TeamCard },
 };
 </script>
 
-<style>
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
+<style lang="scss">
+.team {
+  .member {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    .icons {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 40px;
+      opacity: 0;
+      transition: ease-in-out 0.3s;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.85);
+      a {
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+        color: var(--main-black-color);
+        &:hover{
+          color: var(--main-red-color) !important;
+        }
+      }
+    }
+    &:hover .icons{
+      opacity: 1;
+    }
 
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #473d3a;
-  margin: 0 10px;
-  padding-top: 8px;
-  display: inline-block;
-}
-
-.team .member .social a:hover {
-  color: #ff5821;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #473d3a;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #989595;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #656262;
-}
-
-.team .member:hover .social {
-  opacity: 1;
+  }
 }
 </style>

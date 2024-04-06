@@ -7,7 +7,7 @@
   --main-red-color: #e74c3c;
   --main-green-color: #0f9c22;
   --main-orange-color: #f0690f;
-  --main-primary-color: #2c3e50;
+  --main-black-color: #2c3e50;
 
 }
 #app {
@@ -18,8 +18,8 @@
   color: var(--main-primary-color);
 }
 
-.text-primary{
-  color: var(--main-primary-color) !important;
+.text-black{
+  color: var(--main-black-color);
 }
 .text-red{
   color: var(--main-red-color);

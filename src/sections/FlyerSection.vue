@@ -7,6 +7,7 @@
     </p>
   </div>
 </template>
+
 <style lang="scss">
 .flyerSection{
   background-image: url('@/assets/flyer.jpg');
@@ -35,5 +36,4 @@
     }
   }
 }
-
 </style>

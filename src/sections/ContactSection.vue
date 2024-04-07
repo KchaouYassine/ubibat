@@ -1,7 +1,7 @@
 <template>
   <div class="contactSection text-center p-4">
-    <div class="d-flex justify-content-around align-items-center">
-      <div class="">
+    <div class="contactContent d-flex align-items-center flex-wrap">
+      <div class="d-none d-lg-inline-flex">
         <img src="@/assets/parisMaps.jpg" class="img-fluid" alt="" height="300" width="300" />
       </div>
       
@@ -22,18 +22,18 @@
         </div>
       </div>
 
-      <div class="text-center">
+      <div class="text-start">
         <h3>Domaines d'intervention</h3>
-        <div class="row">
+        <div class="row domaineInterventionsImg">
             <div class="col-12 mb-1">
-              <img src="@/assets/clients/client-5.png" class="me-1" height="80" width="80" alt="">
-              <img src="@/assets/clients/client-5.png" class="me-1" height="80" width="80" alt="">
-              <img src="@/assets/clients/client-5.png" class="me-1" height="80" width="80" alt="">
+              <img src="@/assets/clients/client-4.png" class="me-1" width="80" alt="">
+              <img src="@/assets/clients/client-5.png" class="me-1" width="80" alt="">
+              <img src="@/assets/clients/client-5.png" class="me-1" width="80" alt="">
             </div>
             <div class="col-12 mb-1">
-              <img src="@/assets/clients/client-5.png" class="me-1" height="80" width="80" alt="">
-              <img src="@/assets/clients/client-5.png" class="me-1" height="80" width="80" alt="">
-              <img src="@/assets/clients/client-5.png" class="me-1" height="80" width="80" alt="">
+              <img src="@/assets/clients/client-4.png" class="me-1"  width="80" alt="">
+              <img src="@/assets/clients/client-5.png" class="me-1"  width="80" alt="">
+              <img src="@/assets/clients/client-5.png" class="me-1"  width="80" alt="">
             </div>
         </div>
       </div>
@@ -45,5 +45,20 @@
 <style>
 .contactSection{
   background: rgba(240, 105, 15, 0.6);
+}
+.contactContent{
+  justify-content: start;
+  .domaineInterventionsImg{
+    height: 80px
+  } 
+}
+@media (min-width: 768px) {
+  .contactContent   {
+    justify-content: space-around; 
+    .domaineInterventionsImg{
+      height: 60px
+    }
+  }
+
 }
 </style>

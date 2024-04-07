@@ -2,7 +2,7 @@
   <!-- prettier-ignore -->
   <div class="team container">
       <h1 class="sectionTitle fw-bold my-5">Notre team</h1>
-       <div class="d-flex justify-content-around align-items-center">
+      <div class="d-flex justify-content-around align-items-center flex-wrap">
         <TeamCard :name="ahmedInfos.name" :email="ahmedInfos.email" :phoneNumber="ahmedInfos.phoneNumber" :linkedIn="ahmedInfos.linkedIn" :imgPath="ahmedInfos.imgPath" />
         <TeamCard :name="azmiInfos.name" :email="azmiInfos.email" :phoneNumber="azmiInfos.phoneNumber" :linkedIn="azmiInfos.linkedIn" :imgPath="azmiInfos.imgPath" />
       </div> 

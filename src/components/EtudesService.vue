@@ -1,8 +1,8 @@
 <template>
   <div class="etudeSection p-5 position-relative text-center overflow-hidden">
-    <div class="w-50">
+    <div class="etudeContent">
       <h1 class="fw-bold mb-4 ">Etudes</h1>
-      <p class="my-4 fs-5">Un diagnostic se définit par l´indentication de la nature dune situation, d’un désordre dans le domaine de la construction.
+      <p class="my-4 fs-6 textContent fw-bold">Un diagnostic se définit par l´indentication de la nature dune situation, d’un désordre dans le domaine de la construction.
         Nous garantissons une evaluation exacte et détaillée des structures existantes afin de mettre en avant les éventuels défauts pouvant impacter la valeur et la durabilité dun ouvrage
       </p>
       <div class="services row margin-auto">
@@ -66,30 +66,37 @@ setup() {
 .etudeSection{
   background: url(@/assets/services/etude.jpg);
   background-size: cover;
-  > div{
-    margin-left: 50%;
-  }
-  }
+  
+}
 
 .services {
-.icon-box {
-  height: 320px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  .icon-box {
+    height: 400px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 
-  .icon {
-    background:var(--main-green-color);
-  }
-  &:hover{
     .icon {
-      color: var(--main-green-color) !important;
-      border: 2px solid var(--main-green-color);
+      background:var(--main-green-color);
     }
-    h4{
-      color: var(--main-green-color) ;
-    }
+    &:hover{
+      .icon {
+        color: var(--main-green-color) !important;
+        border: 2px solid var(--main-green-color);
+      }
+      h4{
+        color: var(--main-green-color) ;
+      }
 
+    }
   }
 }
-}
 
+// Large devices
+@media (min-width: 992px) {
+  .etudeContent{
+    width: 50%;
+  }
+  .etudeSection > div{
+    margin-left: 50%;
+  }
+}
 </style>

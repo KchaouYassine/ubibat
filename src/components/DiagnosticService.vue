@@ -1,8 +1,8 @@
 <template>
     <div class="diagnosticSection p-5 position-relative text-center">
-      <div class="w-50">
+      <div class="diagnosticContent">
         <h1 class="fw-bold mb-4 ">Diagnostic</h1>
-        <p class="my-4 fs-5">Un diagnostic se définit par l´indentication de la nature dune situation, d’un désordre dans le domaine de la construction.
+        <p class="my-4 fs-6 textContent fw-bold">Un diagnostic se définit par l´indentication de la nature dune situation, d’un désordre dans le domaine de la construction.
           Nous garantissons une evaluation exacte et détaillée des structures existantes afin de mettre en avant les éventuels défauts pouvant impacter la valeur et la durabilité dun ouvrage
         </p>
         <div class="services row margin-auto">
@@ -70,7 +70,7 @@ export default {
 
 .services {
   .icon-box {
-    height: 320px;
+    height: 400px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     border-radius: 0.375rem;
 
@@ -97,6 +97,23 @@ export default {
       }
 
     }
+  }
+}
+
+// Medium devices
+@media (min-width: 768px) {
+  .services .icon-box {
+    height: 380px
+  }
+}
+
+// Large devices
+@media (min-width: 992px) {
+  .diagnosticContent{
+    width: 50%
+  }
+  .services .icon-box {
+    height: 420px
   }
 }
 

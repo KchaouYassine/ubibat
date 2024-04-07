@@ -1,8 +1,8 @@
 <template>
-  <div class="etudeSection p-5 position-relative text-center overflow-hidden">
-    <div class="w-50">
+  <div class="chantierSection p-5 position-relative text-center overflow-hidden">
+    <div class="chantierContent">
       <h1 class="fw-bold mb-4 ">Chantier</h1>
-      <p class="my-4 fs-5">Un diagnostic se définit par l´indentication de la nature dune situation, d’un désordre dans le domaine de la construction.
+      <p class="my-4 fs-6 textContent fw-bold">Un diagnostic se définit par l´indentication de la nature dune situation, d’un désordre dans le domaine de la construction.
         Nous garantissons une evaluation exacte et détaillée des structures existantes afin de mettre en avant les éventuels défauts pouvant impacter la valeur et la durabilité dun ouvrage
       </p>
       <div class="services row margin-auto">
@@ -63,17 +63,14 @@ setup() {
 </script>
 
 <style lang="scss" scoped>
-.etudeSection{
+.chantierSection{
   background: url(@/assets/services/chantier.jpg);
   background-size: cover;
-  > div{
-    margin-left: 50%;
-  }
   }
 
 .services {
 .icon-box {
-  height: 320px;
+  height: 400px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 
   .icon {
@@ -90,6 +87,16 @@ setup() {
 
   }
 }
+}
+
+// Large devices
+@media (min-width: 992px) {
+  .chantierContent{
+    width: 50%;
+  }
+  .chantierSection > div{
+    margin-left: 50%;
+  }
 }
 
 </style>

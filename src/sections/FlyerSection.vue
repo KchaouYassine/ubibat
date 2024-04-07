@@ -1,7 +1,7 @@
 <template>
   <div class="flyerSection d-flex justify-content-center align-items-center my-5 px-3 text-center">
     <p class="fs-4 fw-bold text-white">Découvrez notre univers captivant ! Téléchargez notre brochure pour en savoir plus !
-      <a href="@/assets/Documents/flyer.pdf" download class="btn text-white fw-bold px-3 ms-3 mt-1">
+      <a href="@/assets/Documents/flyer.pdf" download class="btn text-white fw-bold px-3 mt-1">
         <i class="fa fa-download"></i> Télécharger
       </a>
     </p>

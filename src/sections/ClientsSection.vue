@@ -2,7 +2,7 @@
   <div class="clientSection container text-center my-3">
     <h1 class="sectionTitle fw-bold my-5">Nos Clients</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators mt-3">
+      <div class="carousel-indicators mt-1">
         <button class="indicator active" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide-to="0" aria-current="true"></button>
         <button class="indicator" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
@@ -26,7 +26,7 @@
 <style >
 .clientSection {
   img {
-    height: 90px;
+    height: 50px;
     width: 15%;
     margin-right: 5%;
     /* opacity: 0.5; */
@@ -47,14 +47,27 @@
     border: 0 !important;
     border-radius: 0.375rem;
     background: #c0bcbc !important;
-    height: 7px !important;
+    height: 5px !important;
     &.active{
       background: var(--main-orange-color)  !important;
     }
   }
 
   .carousel-item {
-    height: 150px;
+    height: 100px;
   }
 }
+@media (min-width: 768px) {
+  .clientSection  img {
+    height: 90px;
+  }
+  .carousel-item {
+    height: 150px !important;
+  }
+  .indicator {
+    height: 7px !important;
+  }
+}
+
+
 </style>

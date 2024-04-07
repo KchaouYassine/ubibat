@@ -1,11 +1,11 @@
 <template>
-  <div class="landing-section position-relative w-100 d-flex justify-content-center align-items-center flex-wrap">
-    <div class="w-100" >
+  <div class="landing-section position-relative w-100 d-flex justify-content-center align-items-center flex-wrap text-center">
+    <div class="image w-100" >
       <img src="@/assets/logo.png" alt="logo" /> 
     </div>    
-    <div class="rotating-text fw-bold text-white">
+    <div class="rotating-text fw-bold text-white ">
       <p class="d-inline-flex m-0 me-3">Nos services sont </p>
-      <p class="d-inline-flex m-0 ">
+      <p class="services m-0 ">
         <span class="word text-red" ref="word1">Diagnostic.</span>
         <span class="word text-green" ref="word2">Etudes.</span>
         <span class="word text-orange" ref="word3">Chantier.</span>
@@ -74,7 +74,6 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
 .landing-section{
   height: calc(100vh - 200px);
@@ -116,13 +115,19 @@ export default {
   transform: skewY(-8deg);
 }
 */
-
+.image img{
+  width: 80%
+}
 .rotating-text { 
-  font-size: 80px;
-  transform: translateX(-80px);
-  margin-top: -20%;
+  z-index: 99;
+  font-size: 35px;
+  transform: translateX(17px);
+  margin-top: -60%;
   p{
     vertical-align: top;
+    .services{
+      display: block;
+    }
     .word {
       position: absolute;
       display: flex;
@@ -133,7 +138,6 @@ export default {
       opacity: 1;
     }
   }
-
 }
 
 .rotating-text p .word .letter {
@@ -148,6 +152,32 @@ export default {
 }
 .rotating-text p .word .letter.behind {
   transform: rotateX(-90deg);
+}
+
+// Medium devices
+@media (min-width: 768px) {
+  .image img{
+    width:60%
+  }
+  .rotating-text { 
+    font-size: 50px;
+    transform: translateX(-120px);
+    margin-top: -40%;
+    .services{
+      display: inline-flex;
+    }
+  }
+}
+
+// Large devices
+@media (min-width: 992px) {
+  .image img{
+    width:40%
+  }
+  .rotating-text { 
+    font-size: 70px;
+    margin-top: -20%;
+  }
 }
 
 </style>

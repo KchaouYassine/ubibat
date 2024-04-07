@@ -1,28 +1,28 @@
 <template>
-  <div class="contactSection">
-    <div class="row justify-content-around align-items-center">
-      <div class="col-sm-4">
-        <img src="@/assets/team/team-1.jpg" class="img-fluid" alt="" height="300" width="300" />
+  <div class="contactSection text-center p-4">
+    <div class="d-flex justify-content-around align-items-center">
+      <div class="">
+        <img src="@/assets/parisMaps.jpg" class="img-fluid" alt="" height="300" width="300" />
       </div>
       
-      <div class="col-sm-4 text-center">
-        <h3>Mystery Code</h3>
-        <div class="text-start">
+      <div class="text-start">
+        <h3>Contact</h3>
+        <div>
           <p>
               Medicusstrasse 5<br>
               kaiserslautern, 676555<br>
-              Germany<br>
+              France<br>
             </p>
             <p>
-              <strong>Phone:</strong> 0641273832<br>
-              <strong>Phone:</strong> 0641273832<br>
+              <strong>Phone:</strong> 06 41 27 38 32<br>
+              <strong>Phone:</strong> 06 64 27 86 57<br>
               <strong>Email:</strong> contact@ubibat.fr<br>
-              <strong>Email:</strong> contact@ubibat.fr<br>
+              <strong>Email:</strong> etude@ubibat.fr<br>
             </p>
         </div>
       </div>
 
-      <div class="col-sm-4 text-center">
+      <div class="text-center">
         <h3>Domaines d'intervention</h3>
         <div class="row">
             <div class="col-12 mb-1">
@@ -44,6 +44,6 @@
 </template>
 <style>
 .contactSection{
-  background: #fff9f7;
+  background: rgba(240, 105, 15, 0.6);
 }
 </style>

@@ -27,7 +27,7 @@ export default {
   },
   data(){
     return {
-      showEmail:true,
+      showEmail:false,
       showPhoneNumber:false
     }
   },

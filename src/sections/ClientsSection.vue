@@ -27,7 +27,7 @@
 .clientSection {
   img {
     height: 50px;
-    width: 15%;
+    width: 50px;
     margin-right: 5%;
     /* opacity: 0.5; */
     /* filter: grayscale(100%); */
@@ -60,6 +60,7 @@
 @media (min-width: 768px) {
   .clientSection  img {
     height: 90px;
+    width: 120px;
   }
   .carousel-item {
     height: 150px !important;

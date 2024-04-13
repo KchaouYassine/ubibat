@@ -2,8 +2,8 @@
   <div class="etudeSection p-5 position-relative text-center overflow-hidden">
     <div class="etudeContent">
       <h1 class="fw-bold mb-4 ">Etudes</h1>
-      <p class="my-4 fs-6 textContent fw-bold">Un diagnostic se définit par l´indentication de la nature dune situation, d’un désordre dans le domaine de la construction.
-        Nous garantissons une evaluation exacte et détaillée des structures existantes afin de mettre en avant les éventuels défauts pouvant impacter la valeur et la durabilité dun ouvrage
+      <p class="my-4 fs-6 textContent fw-bold">L'étude de structure est incontournable dans la réalisation de votre projet, que ce soit en réhabilitation ou en construction.
+          Il s'agit dune entité se chargeant notamment des calculs et notes relatifs a l'étude de faisabilité d'un projet de construction.
       </p>
       <div class="services row margin-auto">
         <div v-for="diagnosticItem in  diagnosticData" :key="diagnosticItem.title"  class="col-md-6">
@@ -32,24 +32,27 @@ name:"EtudeServices",
 setup() {
   const diagnosticData = ref([
     { 
-      title: 'AUSCULTATION ET RECONNAISSANCE',
+      title: 'Études de structures phase APS/APD',
       icon: 'fa-gear',
-      content : ['Auscultation non-destructive par géoradar', 'Mesure de potentiel de corrosion des aciers', 'Réalisation de sondages et prélèvements d’échantillons', 'Réalisation de fouilles de reconnaissance de fondations' ]
+      content : []
     },
     { 
-      title: 'DIAGNOSTIC ET EXPERTISE',
+      title: "Etudes d'exécutions de structures en phase d'EXE",
       icon: 'fa-gear',
-      content : ['Diagnostic visuel/Audit due Diligence', 'Diagnostic technique réglementaire et pathologique', 'Calcul de stabilité au feu/degré coupe-feu', 'Expertise structurelle avant modification (extension, réhabilitation, surélévation)' ]
+      content : []
+
     },
     { 
-      title: 'INGÉNIERIE ET PRÉCONISATION',
+      title: "Conseils en structure: conception et optimisation pour le bâtiment",
       icon: 'fa-gear',
-      content : ['Calcul des capacités portantes', 'Préconisations de renforcement', 'Dimensionnement et optimisation de solutions et renforcements', 'Conseils pour ouvertures ou modifications d’éléments porteurs' ]
+      content : []
+
     },
     { 
-      title: 'ANALYSE DES MATERIAUX',
+      title: "Études en réhabilitation ou en neuf",
       icon: 'fa-gear',
-      content : ['Bétons (essais mécaniques, mesures physiques, analyse chimique et minéralogiques, etc.)', 'Aciers (essais physiques, observations au microscope électronique à balayage)', 'Réalisation de sondages et prélèvements d’échantillons', 'Sols (mesures de PH, analyses granulométriques / chimiques, observations microscopiques)' ]
+      content : []
+
     }
   ])
 

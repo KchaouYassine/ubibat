@@ -3,8 +3,8 @@
   <div class="team container">
       <h1 class="sectionTitle fw-bold my-5">Notre team</h1>
       <div class="d-flex justify-content-around align-items-center flex-wrap">
-        <TeamCard :name="ahmedInfos.name" :email="ahmedInfos.email" :phoneNumber="ahmedInfos.phoneNumber" :linkedIn="ahmedInfos.linkedIn" :imgPath="ahmedInfos.imgPath" />
-        <TeamCard :name="azmiInfos.name" :email="azmiInfos.email" :phoneNumber="azmiInfos.phoneNumber" :linkedIn="azmiInfos.linkedIn" :imgPath="azmiInfos.imgPath" />
+        <TeamCard :name="ahmedInfos.name" :email="ahmedInfos.email"  :profession="ahmedInfos.profession" :phoneNumber="ahmedInfos.phoneNumber" :linkedIn="ahmedInfos.linkedIn" :imgPath="ahmedInfos.imgPath" />
+        <TeamCard :name="azmiInfos.name" :email="azmiInfos.email" :profession="azmiInfos.profession" :phoneNumber="azmiInfos.phoneNumber" :linkedIn="azmiInfos.linkedIn" :imgPath="azmiInfos.imgPath" />
       </div> 
 
   </div>
@@ -18,6 +18,7 @@ export default {
     return {
       ahmedInfos: {
         name: "Ahmed kchaou",
+        profession :"injiniour",
         email: "kchaou.ahmed24@gmail.com",
         phoneNumber: "52565555",
         linkedIn: "https://www.linkedin.com/in/ahmed-kchaou-9829a0110",
@@ -25,6 +26,7 @@ export default {
       },
       azmiInfos: {
         name: "Azmi Ammar",
+        profession :"injiniour",
         email: "azmi@live.fr",
         phoneNumber: "52565555",
         linkedIn: "https://www.linkedin.com/in/azmi-ammar-2a93bb169/",
@@ -49,7 +51,8 @@ export default {
       bottom: 0;
       right: 0;
       height: 40px;
-      opacity: 0;
+      // opacity: 0;
+      opacity: 1;
       transition: ease-in-out 0.3s;
       text-align: center;
       background: rgba(255, 255, 255, 0.85);
@@ -63,7 +66,7 @@ export default {
       }
     }
     &:hover .icons{
-      opacity: 1;
+      // opacity: 1;
     }
 
   }

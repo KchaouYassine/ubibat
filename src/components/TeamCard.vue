@@ -1,7 +1,8 @@
 <template>
   <div class="member text-center mb-3 bg-white overflow-hidden ">
     <div class="member-img position-relative ">
-      <img src="@/assets/team/team-1.jpg" class="img-fluid" alt="" />
+      <img :src="require(`@/assets/team/${imgPath}.png`)"  class="img-fluid" alt="" />
+    
       <div class="icons">
         <a @click="onChooseInfo('profession')"> <font-awesome-icon icon="fa-solid fa-user-tie"  class="d-inline-block mx-2 mt-3 cursor-pointer" /></a>
         <a @click="onChooseInfo('email')"> <font-awesome-icon icon="fa-solid fa-envelope fa-lg" class="d-inline-block mx-2 mt-3 cursor-pointer" /></a>
@@ -26,7 +27,8 @@ export default {
     profession: String,
     email: String,
     phoneNumber: String,
-    linkedIn: String
+    linkedIn: String,
+    imgPath: String
   },
   data(){
     return {

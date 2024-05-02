@@ -30,6 +30,7 @@
 .text-orange {
   color: var(--main-orange-color);
 }
+
 .cursor-pointer{
   cursor: pointer !important;
 }

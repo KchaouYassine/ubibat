@@ -1,7 +1,7 @@
 <template>
   <!-- prettier-ignore -->
-  <div class="team container">
-      <h1 class="sectionTitle fw-bold my-5">Notre team</h1>
+  <div class="team container py-5">
+      <h1 class="sectionTitle fw-bold mb-5">Notre team</h1>
       <div class="d-flex justify-content-around align-items-center flex-wrap">
         <TeamCard :name="ahmedInfos.name" :email="ahmedInfos.email"  :profession="ahmedInfos.profession" :phoneNumber="ahmedInfos.phoneNumber" :linkedIn="ahmedInfos.linkedIn" :imgPath="ahmedInfos.imgPath" />
         <TeamCard :name="azmiInfos.name" :email="azmiInfos.email" :profession="azmiInfos.profession" :phoneNumber="azmiInfos.phoneNumber" :linkedIn="azmiInfos.linkedIn" :imgPath="azmiInfos.imgPath" />
@@ -18,7 +18,7 @@ export default {
     return {
       ahmedInfos: {
         name: "Ahmed kchaou",
-        profession :"injiniour",
+        profession :"Ingénieur chargé d'affaires",
         email: "kchaou.ahmed24@gmail.com",
         phoneNumber: "52565555",
         linkedIn: "https://www.linkedin.com/in/ahmed-kchaou-9829a0110",
@@ -26,7 +26,7 @@ export default {
       },
       azmiInfos: {
         name: "Azmi Ammar",
-        profession :"injiniour",
+        profession :"Responsable pôle diagnostic",
         email: "azmi@live.fr",
         phoneNumber: "52565555",
         linkedIn: "https://www.linkedin.com/in/azmi-ammar-2a93bb169/",
@@ -45,6 +45,10 @@ export default {
     text-align: center;
     border-radius: 5px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    img{
+      width: 300px;
+      height: 320px;
+    }
     .icons {
       position: absolute;
       left: 0;

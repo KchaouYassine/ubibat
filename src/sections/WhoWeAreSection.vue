@@ -21,29 +21,3 @@
       
   </div>
 </template>
-
-<style lang="scss">
-// TODO
-.sectionTitle::before {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 2px;
-    top: 50%;
-    left: -55px;
-    margin-top: -1px;
-    background: var(--primary);
-}
-
-.sectionTitle::after {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 2px;
-    top: 50%;
-    right: -55px;
-    margin-top: -1px;
-    background: var(--primary);
-}
-
-</style>

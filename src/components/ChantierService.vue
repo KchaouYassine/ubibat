@@ -7,7 +7,7 @@
       <div class="services row margin-auto">
         <div v-for="diagnosticItem in  chantierData" :key="diagnosticItem.title"  class="col-md-6">
           <div class="icon-box position-relative  bg-white mb-5 mt-3 py-5 px-4 ">
-              <div class="icon position-absolute text-white d-flex align-items-center justify-content-center"><font-awesome-icon icon="fa-solid fa-check fa-lg" /></div>
+              <div class="icon position-absolute text-white d-flex align-items-center justify-content-center"><font-awesome-icon icon="fa-solid fa-screwdriver-wrench fa-lg" /></div>
               <h4 class="fs-5 mb-3 text-center">{{ diagnosticItem.title }}</h4>
               <ul class=" list-unstyled text-start">
                 <li class="mb-1" v-for="info in  diagnosticItem.content" :key="info"> 

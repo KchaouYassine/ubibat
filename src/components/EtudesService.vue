@@ -8,7 +8,7 @@
       <div class="services row margin-auto">
         <div v-for="diagnosticItem in  diagnosticData" :key="diagnosticItem.title"  class="col-md-6">
           <div class="icon-box position-relative  bg-white mb-5 mt-3 py-5 px-4 ">
-              <div class="icon position-absolute text-white d-flex align-items-center justify-content-center"><font-awesome-icon icon="fa-solid fa-check fa-lg" /></div>
+              <div class="icon position-absolute text-white d-flex align-items-center justify-content-center"><font-awesome-icon icon="fa-solid fa-clipboard-list fa-lg" /></div>
               <h4 class="fs-5 mb-3 text-center">{{ diagnosticItem.title }}</h4>
               <ul class=" list-unstyled text-start">
                 <li class="mb-1" v-for="info in  diagnosticItem.content" :key="info"> 
@@ -67,6 +67,7 @@ setup() {
 
 <style lang="scss" scoped>
 .etudeSection{
+  height: 1190px;
   background: url(@/assets/services/etude.jpg);
   background-size: cover;
   
@@ -74,7 +75,7 @@ setup() {
 
 .services {
   .icon-box {
-    height: 400px;
+    height: 170px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 
     .icon {

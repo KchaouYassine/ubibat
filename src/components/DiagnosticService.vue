@@ -8,7 +8,7 @@
         <div class="services row margin-auto">
           <div v-for="diagnosticItem in  diagnosticData" :key="diagnosticItem.title"  class="col-md-6">
             <div class="icon-box position-relative  bg-white mb-5 mt-3 py-5 px-4 ">
-              <div class="icon position-absolute text-white d-flex align-items-center justify-content-center"><font-awesome-icon icon="fa-solid fa-check fa-lg" /></div>
+              <div class="icon position-absolute text-white d-flex align-items-center justify-content-center"><font-awesome-icon icon="fa-solid fa-chart-bar fa-lg" /></div>
               <h4 class="fs-5 mb-3 text-center">{{ diagnosticItem.title }}</h4>
               <ul class=" list-unstyled text-start">
                 <li class="mb-1" v-for="info in  diagnosticItem.content" :key="info"> 
@@ -32,23 +32,23 @@ export default {
     const diagnosticData = ref([
       { 
         title: 'AUSCULTATION ET RECONNAISSANCE',
-        icon: 'fa-gear',
+        icon: 'fa-chart-bar',
         content : ['Auscultation non-destructive par géoradar', 'Mesure de potentiel de corrosion des aciers', 'Réalisation de sondages et prélèvements d’échantillons', 'Réalisation de fouilles de reconnaissance de fondations' ]
       },
       { 
         title: 'DIAGNOSTIC ET EXPERTISE',
-        icon: 'fa-gear',
+        icon: 'fa-chart-bar',
         content : ['Diagnostic visuel/Audit due Diligence', 'Diagnostic technique réglementaire et pathologique', 'Calcul de stabilité au feu/degré coupe-feu', 'Expertise structurelle avant modification (extension, réhabilitation, surélévation)' ]
       },
       { 
         title: 'INGÉNIERIE ET PRÉCONISATION',
-        icon: 'fa-gear',
+        icon: 'fa-chart-bar',
         content : ['Calcul des capacités portantes', 'Préconisations de renforcement', 'Dimensionnement et optimisation de solutions et renforcements', 'Conseils pour ouvertures ou modifications d’éléments porteurs' ]
       },
       { 
         title: 'ANALYSE DES MATERIAUX',
-        icon: 'fa-gear',
-        content : ['Bétons (essais mécaniques, mesures physiques, analyse chimique et minéralogiques, etc.)', 'Aciers (essais physiques, observations au microscope électronique à balayage)', 'Réalisation de sondages et prélèvements d’échantillons', 'Sols (mesures de PH, analyses granulométriques / chimiques, observations microscopiques)' ]
+        icon: 'fa-chart-bar',
+        content : ['Bétons (essais mécaniques, mesures physiques, analyse chimique et minéralogiques, etc.)', 'Aciers (essais physiques, observations au microscope électronique à balayage)', 'Réalisation de sondages et prélèvements d’échantillons' ]
       }
     ])
 
@@ -63,6 +63,7 @@ export default {
 
 <style lang="scss" >
 .diagnosticSection{
+  
   background: url(@/assets/services/diagnostic.jpg);
   background-size: cover;
 

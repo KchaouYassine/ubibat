@@ -54,8 +54,8 @@
 }
 @media (min-width: 768px) {
   .clientSection  img {
-    height: 90px;
-    width: 120px;
+    height: 90px  !important;
+    width: 120px !important;
     &:hover{
       height: 100px;
       width: 20%;

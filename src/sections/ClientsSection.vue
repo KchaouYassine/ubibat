@@ -9,15 +9,15 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="@/assets/clients/client-1.png" alt="">
-          <img src="@/assets/clients/client-2.png" alt="">
-          <img src="@/assets/clients/client-3.png" alt="">
+          <img src="@/assets/clients/client-9.svg" alt="">
+          <img src="@/assets/clients/client-3.png" alt="vinci">
           <img src="@/assets/clients/client-4.png" alt="">
         </div>
         <div class="carousel-item">
-          <img src="@/assets/clients/client-5.png" alt="">
-          <img src="@/assets/clients/client-3.png" alt="">
-          <img src="@/assets/clients/client-4.png" alt="">
-          <img src="@/assets/clients/client-9.svg" alt="">
+          <img src="@/assets/clients/Dior.png" alt="">
+          <img src="@/assets/clients/Esiris.png" alt="">
+          <img src="@/assets/clients/Edys.png" alt="">
+          <img src="@/assets/clients/Infraneo.png"  alt="">
         </div>
       </div>
     </div>
@@ -26,18 +26,13 @@
 <style >
 .clientSection {
   img {
-    height: 50px;
-    width: 50px;
+    height: 50px ;
+    width: 60px ;
     margin-right: 5%;
     /* opacity: 0.5; */
     /* filter: grayscale(100%); */
     transition: ease-in-out 0.3s;
-    &:hover{
-      /* filter: none;
-      opacity: 1; */
-      height: 100px;
-      width: 20%;
-    }
+    
   }
 
   .carousel-indicators{
@@ -61,6 +56,10 @@
   .clientSection  img {
     height: 90px;
     width: 120px;
+    &:hover{
+      height: 100px;
+      width: 20%;
+    }
   }
   .carousel-item {
     height: 150px !important;

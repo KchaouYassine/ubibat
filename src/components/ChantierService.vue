@@ -88,6 +88,12 @@ setup() {
 }
 }
 
+@media (min-width: 768px) {
+  .services .icon-box {
+    height: 320px
+  }
+}
+
 // Large devices
 @media (min-width: 992px) {
   .chantierContent{
@@ -96,6 +102,7 @@ setup() {
   .chantierSection > div{
     margin-left: 50%;
   }
+
 }
 
 </style>

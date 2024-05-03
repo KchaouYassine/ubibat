@@ -83,7 +83,7 @@
           <h3>Adresse</h3>
           <p>
             Medicusstrasse 5<br>
-            kaiserslautern, 676555<br>
+            Paris, 75008 <br>
             France<br>
           </p>
         </div>

@@ -8,14 +8,14 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="@/assets/clients/client-1.png" alt="">
-          <img src="@/assets/clients/client-9.svg" alt="">
-          <img src="@/assets/clients/client-3.png" alt="vinci">
-          <img src="@/assets/clients/client-4.png" alt="">
+          <img src="@/assets/clients/ParisCity.png" alt="">
+          <img src="@/assets/clients/Esiris.png" alt="">
+          <img src="@/assets/clients/vinci.png" alt="vinci">
+          <img src="@/assets/clients/Batiegere.png" alt="">
         </div>
         <div class="carousel-item">
           <img src="@/assets/clients/Dior.png" alt="">
-          <img src="@/assets/clients/Esiris.png" alt="">
+          <img src="@/assets/clients/sncf2.png" alt="">
           <img src="@/assets/clients/Edys.png" alt="">
           <img src="@/assets/clients/Infraneo.png"  alt="">
         </div>
@@ -26,8 +26,8 @@
 <style >
 .clientSection {
   img {
-    height: 50px ;
-    width: 60px ;
+    height: 50px !important;
+    width: 60px !important;
     margin-right: 5%;
     /* opacity: 0.5; */
     /* filter: grayscale(100%); */

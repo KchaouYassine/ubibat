@@ -114,7 +114,7 @@ export default {
     width: 50%
   }
   .services .icon-box {
-    height: 420px
+    height: 380px
   }
 }
 

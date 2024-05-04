@@ -35,6 +35,20 @@
   cursor: pointer !important;
 }
 
+//Alert Styling
+.swal2-title{
+  color: var(--main-green-color) !important;
+}
+#swal2-html-container{
+
+}
+.swal2-confirm{
+  background: var(--main-orange-color) !important;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
 
 
 </style>

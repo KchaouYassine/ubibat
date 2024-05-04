@@ -28,13 +28,12 @@
   img {
     height: 50px !important;
     width: 60px !important;
-    margin-right: 5%;
+    margin-right: 20px;
     /* opacity: 0.5; */
     /* filter: grayscale(100%); */
     transition: ease-in-out 0.3s;
     
   }
-
   .carousel-indicators{
   border-top: none;
   }
@@ -49,25 +48,23 @@
   }
 
   .carousel-item {
-    height: 100px;
+    height: 150px;
   }
 }
 @media (min-width: 768px) {
+  img{
+    margin-right: 30px;
+  }
   .clientSection  img {
     height: 90px  !important;
     width: 120px !important;
     &:hover{
-      height: 100px;
-      width: 20%;
+      height: 100px !important;
+      width: 20% !important;
     }
-  }
-  .carousel-item {
-    height: 150px !important;
   }
   .indicator {
     height: 7px !important;
   }
 }
-
-
 </style>

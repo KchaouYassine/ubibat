@@ -55,23 +55,22 @@
           <div class="productElement">
             <textarea
               v-model="v$.contactForm.message.$model"
-              class="w-100 h-100 p-2 textAreaStyling"
+              class="w-100 h-100 p-2 textAreaStyling text-white"
               label="votre message"
               rows="3"
             ></textarea>
           </div>
-
           <small
             v-if="v$.contactForm.message.$error"
             class="text-red float-start py-2 px-3"
           >
             {{ v$.contactForm.message.$errors[0].$message }}
-        </small>
+          </small>
         </div>
 
-        <div class="d-grid gap-2">
-          <button class="btn btn-orange text-white fs-5" type="button">Envoyer</button>
-        </div>
+          <div class="">
+            <button class="btn btn-orange text-white fs-5 w-100" type="button" @click="sendMessage">Envoyer</button>
+          </div>
       </form>
 
       <div class="d-flex justify-content-between flex-wrap text-white flexDirection">
@@ -107,8 +106,8 @@
 
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '@vuelidate/validators'
-
-// i/mport emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
+import emailjs from '@emailjs/browser'
 
 export default {
   setup() {
@@ -131,39 +130,53 @@ export default {
   },
 
   methods: {
-    /*
+    
     async sendMessage() {
-      const templateParams = {
-        from_name: this.contactForm.lastName,
-        from_email: this.contactForm.email,
-        from_message: this.contactForm.message,
-      }
+      // const templateParams = {
+      //   from_name: this.contactForm.lastName,
+      //   from_email: this.contactForm.email,
+      //   from_message: this.contactForm.message,
+      // }
       this.v$.$validate()
       if (this.v$.$error) {
+        //show error Toast 
         return
-      } else {
-        await addDoc(collection(db, 'contactUSMessages'), {
-          date: new Date(),
-          message: this.contactForm,
-        })
-          .then(() => {
-            emailjs.send(
-              process.env.VUE_APP_EMAILJS_SERVICE_ID,
-              process.env.VUE_APP_ORDER_CONTACT_TEMPLATE_ID,
-              templateParams,
-              process.env.VUE_APP_EMAILJS_PUBLIC_KEY,
-            )
-          })
-          .then(() => {
-            this.contactForm.message = null
-            Toast.fire({
-              icon: 'success',
-              title: this.$t('contactUSView.successMessage'),
-            })
-          })
+      }else{
+        this.v$.$reset()
+        Swal.fire({
+          icon: 'success',
+          title: 'Message envoyer',
+          text: 'Merci pour votre message. Nous vous répondrons dans les plus brefs délais.',
+          confirmButtonText: 'Okey',
+        });
       }
+      // } else {
+      //   emailjs.send(
+      //         process.env.VUE_APP_EMAILJS_SERVICE_ID,
+      //         process.env.VUE_APP_ORDER_CONTACT_TEMPLATE_ID,
+      //         templateParams,
+      //         process.env.VUE_APP_EMAILJS_PUBLIC_KEY,
+      //       )
+      //       .catch(() => {
+      //         Toast.fire({
+      //         icon: 'error',
+      //         title: 'Oops',
+      //          text: 'Un problème est survenu. Veuillez réessayer de nouveau',
+
+      //       })
+      //       })
+      //     .finally(() => {
+      //       this.contactForm.message = null
+      //       this.v$.$reset()
+      //       Toast.fire({
+      //         icon: 'success',
+      //         title: 'merci becau pour votre message',
+      //         content: 'sdcdscdsc'
+      //       })
+      //     })
+      // }
     },
-    */
+    
   },
   validations() {
     return {

@@ -123,58 +123,52 @@ export default {
         lastName: null,
         message: null,
       },
-      fromLangToTempID: {
-        en: 'template_1ggbb0i',
-      },
     }
   },
 
   methods: {
     
     async sendMessage() {
-      // const templateParams = {
-      //   from_name: this.contactForm.lastName,
-      //   from_email: this.contactForm.email,
-      //   from_message: this.contactForm.message,
-      // }
+      const templateParams = {
+        first_name: this.contactForm.firstName,
+        last_name: this.contactForm.lastName,
+        from_email: this.contactForm.email,
+        message: this.contactForm.message,
+      }
       this.v$.$validate()
       if (this.v$.$error) {
-        //show error Toast 
-        return
-      }else{
-        this.v$.$reset()
         Swal.fire({
-          icon: 'success',
-          title: 'Message envoyer',
-          text: 'Merci pour votre message. Nous vous répondrons dans les plus brefs délais.',
+          icon: 'error',
+          title: 'Oops',
+          text: 'Un problème est survenu. Veuillez réessayer de nouveau',
           confirmButtonText: 'Okey',
-        });
+        })
+        return
+      } else {
+        emailjs.send(
+          process.env.VUE_APP_EMAILJS_SERVICE_ID,
+          process.env.VUE_APP_EMAILJS_TEMPLATE_ID,
+          templateParams,
+          process.env.VUE_APP_EMAILJS_PUBLIC_KEY,
+        ).then(() => {
+          this.contactForm.message = null
+          this.v$.$reset()
+          Swal.fire({
+            icon: 'success',
+            title: 'Message envoyer',
+            text: 'Merci pour votre message. Nous vous répondrons dans les plus brefs délais.',
+            confirmButtonText: 'Okey',
+          });
+        })
+        .catch(() => {
+          Swal.fire({
+          icon: 'error',
+          title: 'Oops',
+          text: 'Un problème est survenu. Veuillez réessayer de nouveau',
+          confirmButtonText: 'Okey',
+          })
+        })
       }
-      // } else {
-      //   emailjs.send(
-      //         process.env.VUE_APP_EMAILJS_SERVICE_ID,
-      //         process.env.VUE_APP_ORDER_CONTACT_TEMPLATE_ID,
-      //         templateParams,
-      //         process.env.VUE_APP_EMAILJS_PUBLIC_KEY,
-      //       )
-      //       .catch(() => {
-      //         Toast.fire({
-      //         icon: 'error',
-      //         title: 'Oops',
-      //          text: 'Un problème est survenu. Veuillez réessayer de nouveau',
-
-      //       })
-      //       })
-      //     .finally(() => {
-      //       this.contactForm.message = null
-      //       this.v$.$reset()
-      //       Toast.fire({
-      //         icon: 'success',
-      //         title: 'merci becau pour votre message',
-      //         content: 'sdcdscdsc'
-      //       })
-      //     })
-      // }
     },
     
   },

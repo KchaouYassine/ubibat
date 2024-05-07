@@ -2,7 +2,7 @@
   <div class="clientSection container text-center my-3">
     <h1 class="sectionTitle fw-bold my-5">Nos Clients</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators mt-1">
+      <div class="d-none carousel-indicators mt-1">
         <button class="indicator active" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide-to="0" aria-current="true"></button>
         <button class="indicator" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>

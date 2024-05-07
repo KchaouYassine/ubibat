@@ -8,16 +8,16 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="@/assets/clients/ParisCity.png" alt="" width="60" height="50">
-          <img src="@/assets/clients/Esiris.png" alt="" width="60" height="50">
+          <img src="@/assets/clients/ParisCity.png"  class="me-1" alt="" width="60" height="50">
+          <img src="@/assets/clients/Esiris.png" class="me-1" alt="" width="60" height="50">
           <img src="@/assets/clients/vinci.png" alt="vinci" width="60" height="50">
-          <img src="@/assets/clients/Batiegere.png" alt="" width="60" height="50">
+          <img src="@/assets/clients/Batiegere.png" class="me-1" alt="" width="60" height="50">
         </div>
         <div class="carousel-item">
-          <img src="@/assets/clients/Dior.png" alt="" width="60" height="50">
-          <img src="@/assets/clients/sncf2.png" alt="" width="60" height="50">
-          <img src="@/assets/clients/Edys.png" alt="" width="60" height="50">
-          <img src="@/assets/clients/Infraneo.png"  alt="" width="60" height="50">
+          <img src="@/assets/clients/Dior.png" class="me-1" alt="" width="60" height="50">
+          <img src="@/assets/clients/sncf2.png" class="me-1" alt="" width="60" height="50">
+          <img src="@/assets/clients/Edys.png" class="me-1" alt="" width="60" height="50">
+          <img src="@/assets/clients/Infraneo.png"  class="me-1" alt="" width="60" height="50">
         </div>
       </div>
     </div>

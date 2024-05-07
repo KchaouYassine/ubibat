@@ -90,8 +90,8 @@
         <div class="text-start mt-5">
           <h3>Contact</h3>
           <p>
-            <strong class="text-orange">Phone:</strong> 06 41 27 38 32<br>
-            <strong class="text-orange">Phone:</strong> 06 64 27 86 57<br>
+            <strong class="text-orange">Phone:</strong> +33 6 41 27 38 32<br>
+            <strong class="text-orange">Phone:</strong> +33 6 64 27 86 57<br>
             <strong class="text-orange">Email:</strong> contact@ubibat.fr<br>
             <strong class="text-orange">Email:</strong> etude@ubibat.fr<br>
           </p>

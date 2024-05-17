@@ -63,7 +63,7 @@ setup() {
 
 <style lang="scss" scoped>
 .chantierSection{
-  background: url(@/assets/services/chantier.jpg);
+  background: url(@/assets/services/chantier_1.jpeg);
   background-size: cover;
   }
 
@@ -99,9 +99,7 @@ setup() {
   .chantierContent{
     width: 50%;
   }
-  .chantierSection > div{
-    margin-left: 50%;
-  }
+
 
 }
 

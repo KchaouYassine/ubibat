@@ -1,6 +1,6 @@
 <template>
   <div class="whoareWeSection container text-center my-5 ">
-    <h1 class="sectionTitle text-orange fw-sm-normal fw-bold text-uppercase">About UBIBAT</h1>
+    <h1 class="sectionTitle text-orange fw-sm-normal fw-bold text-uppercase">À propos</h1>
     <div class="textContent text-center fw-bold fs-6 py-3">
       <p>UBIBAT est une entreprise spécialisée dans le domaine du calcul de structures, du
       diagnostic et de la reconnaissance des structures existantes et du suivi des chantiers.<br>

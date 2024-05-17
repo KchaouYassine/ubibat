@@ -81,7 +81,7 @@
         <div class="text-start mt-5">
           <h3>Adresse</h3>
           <p>
-            Medicusstrasse 5<br>
+            78 Avenue des Champs Élysées<br>
             Paris, 75008 <br>
             France<br>
           </p>

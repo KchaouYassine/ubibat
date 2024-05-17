@@ -5,7 +5,7 @@
     <ServicesSection />
     <ClientsSection/>
     <FlyerSection />
-    <TeamSection />
+    <!--<TeamSection /> -->
     <ContactSection />
     <!-- <FooterSection /> -->
 </template>

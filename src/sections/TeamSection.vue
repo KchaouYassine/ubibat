@@ -1,7 +1,7 @@
 <template>
   <!-- prettier-ignore -->
   <div class="team container py-5">
-      <h1 class="sectionTitle fw-bold mb-5">Notre team</h1>
+      <h1 class="sectionTitle fw-bold mb-5 text-uppercase">Notre équipe</h1>
       <div class="d-flex justify-content-around align-items-center flex-wrap">
         <TeamCard :name="ahmedInfos.name" :email="ahmedInfos.email"  :profession="ahmedInfos.profession" :phoneNumber="ahmedInfos.phoneNumber" :linkedIn="ahmedInfos.linkedIn" :imgPath="ahmedInfos.imgPath" />
         <TeamCard :name="azmiInfos.name" :email="azmiInfos.email" :profession="azmiInfos.profession" :phoneNumber="azmiInfos.phoneNumber" :linkedIn="azmiInfos.linkedIn" :imgPath="azmiInfos.imgPath" />
@@ -19,16 +19,16 @@ export default {
       ahmedInfos: {
         name: "Ahmed kchaou",
         profession :"Ingénieur chargé d'affaires",
-        email: "kchaou.ahmed24@gmail.com",
-        phoneNumber: "52565555",
+        email: "contact@ubibat.fr",
+        phoneNumber: "+33 6 64 27 86 57",
         linkedIn: "https://www.linkedin.com/in/ahmed-kchaou-9829a0110",
         imgPath:"ahmed"
       },
       azmiInfos: {
         name: "Azmi Ammar",
         profession :"Responsable pôle diagnostic",
-        email: "azmi@live.fr",
-        phoneNumber: "52565555",
+        email: "contact@ubibat.fr",
+        phoneNumber: "+33 6 41 27 38 32",
         linkedIn: "https://www.linkedin.com/in/azmi-ammar-2a93bb169/",
         imgPath:"azmi"
       },

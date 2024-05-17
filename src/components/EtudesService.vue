@@ -68,7 +68,7 @@ setup() {
 <style lang="scss" scoped>
 .etudeSection{
   height: 1190px;
-  background: url(@/assets/services/etude.jpg);
+  background: url(@/assets/services/etude_1.jpg);
   background-size: cover;
   
 }
